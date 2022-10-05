@@ -231,7 +231,7 @@
       rate*=3 if self.hp>(self.totalhp/4) && self.hp<=(self.totalhp/2)
       rate*=5 if self.hp<=(self.totalhp/4)
       rate*=2 if @battle.adrenalineorb
-      return true
+      return @battle.pbRandom(100)<rate
     end
     
 
